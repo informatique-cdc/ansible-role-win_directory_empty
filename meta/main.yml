@@ -1,0 +1,19 @@
+galaxy_info:
+  role_name: win_directory_empty
+  author: Stéphane Bilqué
+  description: Ensure that a folder is empty
+  company: Informatique CDC
+  license: Apache
+
+  min_ansible_version: 2.8
+  platforms:
+    - name: windows
+      versions:
+        - 2016
+        - 2019
+
+  galaxy_tags:
+    - directory
+    - empty
+    - folder
+dependencies: []

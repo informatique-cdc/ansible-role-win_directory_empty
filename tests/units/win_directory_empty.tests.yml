@@ -1,0 +1,29 @@
+---
+- name: test the win_directory_empty module
+  hosts: all
+  gather_facts: false
+
+  roles:
+    - win_directory_empty
+
+  tasks:
+
+    - name: Ensure the temp folder is empty
+      win_directory_empty:
+        path: 'c:\windows\temp'
+
+    - name: Ensure the temp folder is empty
+      win_directory_empty:
+        path:
+          - 'c:\windows\temp'
+          - 'c:\temp'
+        exclude: '*1*'
+
+    - name: Ensure the temp folder is empty
+      win_directory_empty:
+        path:
+          - 'c:\windows\temp'
+          - 'c:\temp'
+        exclude:
+          - 'vmware-*.log'
+          - '*2*'

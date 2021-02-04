@@ -8,8 +8,8 @@
 
 | Parameter     | Choices/<font color="blue">Defaults</font> | Comments |
 | ------------- | ---------|--------- |
-|__path__<br><font color="purple">str</font></font> / <font color="red">required</font> |  | A path to one or more locations of the items being removed. |
-|__exclude__<br><font color="purple">str</font></font> |  | An item or items that this module excludes in the operation. |
+|__path__<br><font color="purple">string</font> / <font color="red">required</font> |  | A path to one or more locations of the items being removed. |
+|__exclude__<br><font color="purple">string</font> |  | An item or items that this module excludes in the operation. |
 
 ## Examples
 
